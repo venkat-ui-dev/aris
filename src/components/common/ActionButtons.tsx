@@ -56,7 +56,7 @@ export const ActionButtons = () => {
                 {/* Volume Icon */}
                 <button
                     onClick={handleVolumeIconClick}
-                    className={`w-16 h-16 flex justify-center items-center rounded-full text-white hover:bg-blue-300 ${isMuted ? 'bg-red-500' : 'bg-blue-400'} cursor-pointer`}>
+                    className={`w-16 h-16 justify-center items-center rounded-full text-white hover:bg-blue-300 ${isMuted ? 'bg-red-500' : 'bg-blue-400'} cursor-pointer`}>
                     {isMuted ? (
                         <SpeakerXMarkIcon className="w-8 h-8" />
                     ) : (
@@ -67,13 +67,13 @@ export const ActionButtons = () => {
                 {/* Microphone Icon */}
                 <button
                     onClick={handleMicClick}
-                    className={`w-16 h-16 flex justify-center items-center rounded-full ${isSpeaking ? 'bg-green-500 text-white hover:bg-green-600' : 'bg-blue-400 text-white hover:bg-green-600'} cursor-pointer`}
+                    className={`w-16 h-16 justify-center items-center rounded-full ${isSpeaking ? 'bg-green-500 text-white hover:bg-green-600' : 'bg-blue-400 text-white hover:bg-green-600'} cursor-pointer`}
                 >
                     <MicrophoneIcon className="w-8 h-8" />
                 </button>
 
                 {/* Documentation Icon */}
-                <button className="w-16 h-16 flex justify-center items-center bg-blue-400 rounded-full text-white hover:bg-blue-300 cursor-pointer">
+                <button className="w-16 h-16 justify-center items-center bg-blue-400 rounded-full text-white hover:bg-blue-300 cursor-pointer">
                     <DocumentTextIcon className="w-8 h-8" />
                 </button>
             </div>
