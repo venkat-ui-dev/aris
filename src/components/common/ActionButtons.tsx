@@ -56,7 +56,7 @@ export const ActionButtons = () => {
                 {/* Volume Icon */}
                 <button
                     onClick={handleVolumeIconClick}
-                    className={`w-16 h-16 rounded-full text-white hover:bg-blue-300 ${isMuted ? 'bg-red-500' : 'bg-blue-400'} cursor-pointer flex justify-center items-center`}
+                    className={`w-16 h-16 rounded-full text-white hover:bg-blue-300 ${isMuted ? 'bg-red-500' : 'bg-blue-400'} cursor-pointer`}
                 >
                     {isMuted ? (
                         <SpeakerXMarkIcon className="w-8 h-8" />
