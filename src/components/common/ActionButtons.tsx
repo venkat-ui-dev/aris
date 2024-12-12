@@ -52,11 +52,12 @@ export const ActionButtons = () => {
     return (
         <div className="flex flex-col items-center mt-16 space-y-4">
             {/* Icon Buttons */}
-            <div className="flex justify-around w-full max-w-md space-x-12">
+            <div className="grid grid-cols-3 gap-12 w-full max-w-md">
                 {/* Volume Icon */}
                 <button
                     onClick={handleVolumeIconClick}
-                    className={`w-16 h-16 justify-center items-center rounded-full text-white hover:bg-blue-300 ${isMuted ? 'bg-red-500' : 'bg-blue-400'} cursor-pointer`}>
+                    className={`w-16 h-16 rounded-full text-white hover:bg-blue-300 ${isMuted ? 'bg-red-500' : 'bg-blue-400'} cursor-pointer flex justify-center items-center`}
+                >
                     {isMuted ? (
                         <SpeakerXMarkIcon className="w-8 h-8" />
                     ) : (
@@ -67,13 +68,13 @@ export const ActionButtons = () => {
                 {/* Microphone Icon */}
                 <button
                     onClick={handleMicClick}
-                    className={`w-16 h-16 justify-center items-center rounded-full ${isSpeaking ? 'bg-green-500 text-white hover:bg-green-600' : 'bg-blue-400 text-white hover:bg-green-600'} cursor-pointer`}
+                    className={`w-16 h-16 rounded-full ${isSpeaking ? 'bg-green-500 text-white hover:bg-green-600' : 'bg-blue-400 text-white hover:bg-green-600'} cursor-pointer flex justify-center items-center`}
                 >
                     <MicrophoneIcon className="w-8 h-8" />
                 </button>
 
                 {/* Documentation Icon */}
-                <button className="w-16 h-16 justify-center items-center bg-blue-400 rounded-full text-white hover:bg-blue-300 cursor-pointer">
+                <button className="w-16 h-16 rounded-full bg-blue-400 text-white hover:bg-blue-300 cursor-pointer flex justify-center items-center">
                     <DocumentTextIcon className="w-8 h-8" />
                 </button>
             </div>
@@ -83,5 +84,6 @@ export const ActionButtons = () => {
                 <p className="text-white text-lg">Hold to speak</p>
             </div>
         </div>
+
     );
 }
