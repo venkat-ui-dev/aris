@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/recognizedcontent/recognizedcontent.tsx","./src/components/common/actionbuttons.tsx","./src/components/common/backgroundanimation.tsx","./src/components/common/footer.tsx","./src/components/common/header.tsx","./src/components/common/sphere.tsx","./src/context/speechcontext.tsx"],"version":"5.6.3"}
