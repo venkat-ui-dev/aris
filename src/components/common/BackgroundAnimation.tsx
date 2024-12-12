@@ -1,3 +1,5 @@
+import React from "react";
+
 export const BackgroundAnimation = () => {
     return (
         <div className="relative w-full h-full overflow-hidden">

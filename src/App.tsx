@@ -1,3 +1,4 @@
+import React from "react";
 import { Header } from "./components/common/Header";
 import { BackgroundAnimation } from "./components/common/BackgroundAnimation";
 import { Sphere } from "./components/common/Sphere";

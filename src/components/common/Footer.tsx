@@ -1,3 +1,4 @@
+import React from "react";
 import { ActionButtons } from "./ActionButtons";
 
 export const Footer = () => {

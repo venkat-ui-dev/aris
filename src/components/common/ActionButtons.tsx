@@ -1,3 +1,4 @@
+import React from "react";
 import { SpeakerWaveIcon, MicrophoneIcon, DocumentTextIcon, SpeakerXMarkIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
 import { useSpeechContext } from "../../context/SpeechContext";

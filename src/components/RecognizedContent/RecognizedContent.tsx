@@ -1,3 +1,4 @@
+import React from 'react';
 import { useSpeechContext } from '../../context/SpeechContext'
 
 export const RecognizedContent = () => {
