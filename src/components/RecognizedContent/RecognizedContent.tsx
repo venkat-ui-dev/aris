@@ -18,8 +18,7 @@ export const RecognizedContent = () => {
                     className="inline-block opacity-0 animate-fadeIn"
                     style={{
                         animationDelay: `${index * 0.1}s`,
-                    }}
-                >
+                    }}>
                     {char}
                 </span>
             );
