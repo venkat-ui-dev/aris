@@ -1,50 +1,47 @@
-# React + TypeScript + Vite
+# Aris
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aris is an AI-powered application that helps users summarize meetings, create action plans, and save them for later reference. With integrated speech recognition, users can speak to input their notes, and the system processes them in real-time.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Speech Recognition**: Transcribes spoken words into text.
+- **Real-Time Action Plan Creation**: Generates action plans as the user speaks.
+- **History Saving**: Saves action plans for later reference.
+- **User-Friendly Interface**: Interactive buttons for controlling microphone and volume.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Follow these steps to get the project up and running:
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clone the repository**:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+   ```bash
+   git clone https://github.com/venkat-ui-dev/aris.git
+   cd aris
+   npm install
+   npm run dev
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2. **Technologies Used**:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   - React: A JavaScript library for building user interfaces.
+   - Tailwind CSS: A utility-first CSS framework.
+   - TypeScript: A typed superset of JavaScript for better code quality and maintainability.
+   - Vite: A build tool that provides faster development server start-up.
+   - Framer Motion: A library for animations in React.
+   - Heroicons: A set of high-quality SVG icons.
+
+3. **Project Structure**:
+
+- /src
+- /components - Reusable components
+- /context - Context API files for state management
+- /assets - Static files such as images and icons
+- /styles - Tailwind configuration and custom styles
+
+4. **Vercel Deployment**:
+   You can view the live app here: [Aris on Vercel](https://aris-amber.vercel.app/)
+
+5. **GitHub Repository**:
+   The repository can be found here: [Aris GitHub](https://github.com/venkat-ui-dev/aris)
